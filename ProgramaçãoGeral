@@ -35,5 +35,14 @@ subtração -> -
 Multiplicação -> x
 divisão -> / ou div
 resto da divisão -> % ou mod
-
      
+|| -> ou
+
+ESTRUTURA TERNÁRIA
+teste ? verdadeiro : falso
+int x = 10;
+x == 11 ? "oi" : "tchau"
+
+else -> senão
+else if -> senão isso, aquilo                     sempre que tiver if = tem teste
+
