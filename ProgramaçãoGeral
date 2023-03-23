@@ -65,3 +65,7 @@ for -> mais rapido, mas precisa saber onde termina e nao faz leitura de arquivos
 do while -> pode substituir o while, é mais rapido mas precisa de pelo menos uma linha de execução
 
 chaves {} só é obrigatório com mais de uma linha de execução
+
+JOptionPane.showMessageDialog(null, "Olá", "Alerta", JOptionPane.WARNING_MESSAGE);
+		JOptionPane.showInputDialog("Digite Algo");
+		
