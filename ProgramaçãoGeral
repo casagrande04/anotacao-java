@@ -35,8 +35,20 @@ subtração -> -
 Multiplicação -> x
 divisão -> / ou div
 resto da divisão -> % ou mod
-     
-|| -> ou
+igual -> =
+incremento de um -> ++
+decremento de um -> --
+incremento de valor -> +=
+decremento de valor -> -=
+E -> && and
+Ou -> || or
+igualdade -> ==
+diferença -> !=
+maior que -> >
+menor que -> <
+maior ou igual -> >=
+menor ou igual -> <=
+
 
 ESTRUTURA TERNÁRIA
 teste ? verdadeiro : falso
