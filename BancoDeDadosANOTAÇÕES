@@ -113,6 +113,45 @@ select * from contatos where id = 1;
 
 -- CRUD UPDATE ------------------------------------------
 -- CUIDADO !!! (Sempre usar a cláusula where)
+update contatos set fone = '999998888' where id =1;
+update contatos set fone = '91111110000',email= 'margarinafeliz@gmail.com' where id = 2;
+update contatos set nome = 'Willian Gates', fone = '50 900006666', email= 'bill@outlook.com' where id = 2;
+update contatos set email = 'abilio@gmail.com' where id = 5;
+update contatos set email = 'marcelo@gmail.com' where id = 7;
+update contatos set email = 'marcinho@gmail.com' where id = 11;
+update contatos set fone= '912345678', email = 'mario@gmail.com' where id = 12;
+update contatos set email = 'negao@gmail.com' where id = 14;
+
+-- CRUD DELETE
+-- CUIDADO !!! (Sempre usar a cláusula where junto com a chave primaria)
+
+delete from contatos where id = 15;
+
+-- Alterações na estrutura tabela ----------------------------------------
+
+-- adicionar uma coluna a tabela
+alter table contatos add column obs varchar(100);
+
+-- adicionar uma coluna após um local específico
+alter table contatos add column fone2 varchar(15) not null after fone;
+
+describe contatos;
+select * from contatos;
+
+-- alterando tipo de dados ou validações
+-- ATENÇÃO aos dados já cadastrados!
+
+alter table contatos modify fone2 varchar (20);
+
+describe contatos;
+
+-- Excluir uma coluna
+alter table contatos drop column obs;
+
+-- Excluir a tabela
+drop table contatos;
+select * from contatos;
+
 
 database na barra de acesso-> engenharia reversa-> salvar como PDF 
 
