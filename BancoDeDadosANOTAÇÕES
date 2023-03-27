@@ -80,6 +80,39 @@ describe contatos;
 -- selecionar tudo da tabela
 select * from contatos;
 
+-- CRUD CREATE
+insert into contatos (nome,fone,email) values ('Eduardo Casagrande de Sá','11982651468','edu.casagrande@hotmail.com');
+insert into contatos (nome,fone) values ('Bill Gates', '11940028922');
+insert into contatos (nome, fone) values ('Abílio Pinto', '999998888');
+insert into contatos (nome, fone, email) values ('Alexandre Manhoso', '988881111','memesjonson@gmail.com' );
+insert into contatos (nome, fone) values ('Marcelo do Pastel', '922226666');
+insert into contatos (nome, fone, email) value ('Maurélio Junior', '966667777','ocaradomeme@gmail.com');
+insert into contatos (nome, fone) value ('Astolfo Negão', '900002222');
+insert into contatos (nome, fone, email) value ('Adson Miséria', '987651234', 'galinha@gmail.com');
+insert into contatos (nome, fone) value ('Marcinho da esquina', '916371902');
+insert into contatos (nome, fone) value ('Maricas Mário', '912673526');
+
+-- simulando um erro
+insert into contatos (nome, email) values ('robson vaaaaaaaaaaaaamonde', 'vava@linux.com');
+insert into contatos (nome, fone, email) values ('professor ramos', '961726354', 'professorramos@gmail.com');
+
+-- CRUD READ
+-- selecionar tudo da tabela
+select * from contatos;
+
+-- selecionar e ordenar
+select * from contatos order by nome;
+select * from contatos order by nome desc;
+
+-- pesquisas avançadas
+select nome from contatos;
+select nome,email from contatos;
+select * from contatos where nome like 'a%';
+select * from contatos where nome = "Abílio Pinto";
+select * from contatos where id = 1;
+
+-- CRUD UPDATE ------------------------------------------
+-- CUIDADO !!! (Sempre usar a cláusula where)
 
 database na barra de acesso-> engenharia reversa-> salvar como PDF 
 
@@ -104,4 +137,6 @@ Restore:
 1) Copiar a pasta do projeto para o workspace
 2) No eclipse: 
 	File -> Import -> General -> Expandir a pasta -> Existing projects into workspace -> Select root directory [browse] -> selecionar o workspace -> Selecionar o projeto a ser importado
+
+CRUD - Create, Read, Update, Delete
 
