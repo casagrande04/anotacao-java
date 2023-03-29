@@ -179,3 +179,17 @@ Restore:
 
 CRUD - Create, Read, Update, Delete
 
+Importante!!! ter a mesma versão de drivers e do servidor
+
+Dicas eclipse:
+<ctrl><shift><f> alinhamento do código
+<alt><shift><y> quebra de linha
+<ctrl><shift><o> importação automatica
+
+JAVA JDBC (Java Data Bae Connectivity)
+4 CLASSES;
+- PreparedStatement
+- DriverManager - só se usa uma vez
+- Connection - se usa sempre que quer pegar ou cadastrar algo no banco
+- ResultSet
+
