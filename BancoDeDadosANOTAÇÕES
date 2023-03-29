@@ -193,3 +193,4 @@ JAVA JDBC (Java Data Bae Connectivity)
 - Connection - se usa sempre que quer pegar ou cadastrar algo no banco
 - ResultSet
 
+Sleciona JFrame - adicionar evento - window - window activate 
